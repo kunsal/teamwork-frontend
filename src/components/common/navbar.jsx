@@ -27,6 +27,9 @@ const Navbar = (props) => {
        {props.user.user !== undefined ? 
           <ul className="navbar-nav">
             <li>{props.user.user.firstName} {props.user.user.lastName}</li>
+            <li style={{ marginLeft: '5px'}}>
+              <Link to='/logout' className="text-danger">LOGOUT</Link>
+            </li>
             
           </ul> : 
           <Link to='/login' className="btn btn-sm btn-primary">Login</Link>

@@ -5,7 +5,7 @@ import { login } from '../services/teamwork-api';
 import { connect } from 'react-redux';
 import { LOGIN } from "../redux/actions/types";
 import Loading from "./common/loading";
-import { useHistory, useLocation, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 class Login extends Form {
   state = {

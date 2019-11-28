@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Login from './components/login'; 
+import Logout from './components/logout';
 import Feeds from './components/feeds';
 import NotFound from './components/not-found';
 import Navbar from './components/common/navbar';
@@ -35,6 +36,7 @@ class App extends Component {
             }
             <Route path="/not-found" component={ NotFound } />
             <Route exact path="/login" component={ Login } />
+            <Route exact path="/logout" component={ Logout } />
             <Redirect from="/" exact  to="/movies" />
             <Redirect to="/not-found" />
           </Switch>
