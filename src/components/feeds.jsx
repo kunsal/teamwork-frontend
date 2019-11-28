@@ -23,7 +23,7 @@ class Feeds extends Component {
               <div className="card" style={{width: '100%'}}>
               <div className="card-body">
                 <h5 className="card-title">{feed.title}</h5>
-                <p className="card-text">{feed.article ? feed.article : (<img src={feed.url} width="100%" />)}</p>
+                <p className="card-text">{feed.article ? feed.article : (<img src={feed.url} width="100%" alt="" />)}</p>
                 <a href={`feed/${feed.id}`} className="btn btn-primary" onClick="">View</a>
               </div>
               </div>
