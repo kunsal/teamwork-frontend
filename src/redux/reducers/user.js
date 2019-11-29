@@ -4,7 +4,7 @@ import storage from 'redux-persist/lib/storage';
 export default (state = {}, action) => {
   switch (action.type) {
     case LOGIN:
-      return action;
+      return action.user;
     case LOGOUT:
       storage.removeItem('root');
       return action.user = {};

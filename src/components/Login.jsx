@@ -11,7 +11,7 @@ class Login extends Form {
   state = {
     data: {
       email: '',
-      password: '' 
+      password: ''
     },
     errors: {},
     error: '',

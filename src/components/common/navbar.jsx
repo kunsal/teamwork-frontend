@@ -24,9 +24,9 @@ const Navbar = (props) => {
           <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
           <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form> */}
-       {props.user.user !== undefined ? 
+       {props.user !== undefined ? 
           <ul className="navbar-nav">
-            <li>{props.user.user.firstName} {props.user.user.lastName}</li>
+            <li>{props.user.firstName} {props.user.lastName}</li>
             <li style={{ marginLeft: '5px'}}>
               <Link to='/logout' className="text-danger">LOGOUT</Link>
             </li>
@@ -41,7 +41,7 @@ const Navbar = (props) => {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state.user);
+
   return {
     user: state.user
   }
